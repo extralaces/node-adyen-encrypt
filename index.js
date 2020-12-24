@@ -1,7 +1,7 @@
 function adyenEncrypt(version) {
     version = ~~version;
 
-    if (version && (version >= 21 && version <= 25)) {
+    if (version) {
         return require("./lib/0_1_" + version);
     }
 
